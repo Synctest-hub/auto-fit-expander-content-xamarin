@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExpanderXamarin"
+             xmlns:syncfusion="clr-namespace:Syncfusion.XForms.Expander;assembly=Syncfusion.Expander.XForms"
+             x:Class="ExpanderXamarin.MainPage">
+    <ContentPage.Content>
+        <ScrollView BackgroundColor="#EDF2F5">
+            <StackLayout>
+                <syncfusion:SfExpander DynamicSizeMode="Content" IsExpanded="True">
+                    <syncfusion:SfExpander.Header>
+                        <Grid HeightRequest="50">
+                            <Label Text="Veggie burger" VerticalTextAlignment="Center"/>
+                        </Grid>
+                    </syncfusion:SfExpander.Header>
+
+                    <syncfusion:SfExpander.Content>
+                        <Grid>
+                            <Editor AutoSize="TextChanges" Text="Veggie burger, garden burger, or tofu burger uses a meat analogue, a meat substitute such as tofu, textured vegetable protein, seitan (wheat gluten), Quorn, beans, grains or an assortment of vegetables, which are ground up and formed into patties."/>
+                        </Grid>
+                    </syncfusion:SfExpander.Content>
+                </syncfusion:SfExpander>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
